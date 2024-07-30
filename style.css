@@ -1,0 +1,715 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Abyssinica SIL', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+#navbar {
+    position: fixed; 
+    top: 0;          
+    left: 0;        
+    width: 100%;     
+    background: black;
+    height: 70px;
+    z-index: 1000;   
+}
+
+#navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #ff9800 !important;
+}
+
+#navbar .navbar-brand:hover {
+    color: white !important;
+}
+
+#navbar .navbar-collapse {
+ align-items: center;
+ margin-left: 170px;
+}
+
+#navbar .navbar-nav {
+    
+    display: flex;
+
+}
+#navbar .nav-link {
+    color: #fff !important;
+    margin: 0 10px;
+    position: relative; /* Required for the pseudo-element positioning */
+    padding-bottom: 5px; /* Add some space at the bottom for the border effect */
+    transition: color 0.3s ease; 
+}
+#navbar .nav-link:hover {
+    color: #ff9800 !important; /* Yellow color on hover */
+}
+
+
+#navbar .nav-link::after {
+    content: ''; /* Required for the pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #ff9800;
+    transition: width 0.3s ease; /* Adjust the duration and easing as needed */
+}
+
+#navbar .nav-link:hover::after {
+    width: 100%; /* Expand the border to full width on hover */
+}
+
+/* Buttons */
+button {
+    background: #ff9800;
+    color: #fff;
+    border: 2px solid #ff9800;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background 0.9s ease-in-out;
+    border-radius: 20px;
+}
+#btncv{
+    margin-right: 15px;
+    margin-top: 2px;
+    background: black;
+    color: #ff9800;
+    border: 2px solid #ff9800;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background 0.9s ease-in-out;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#btncv:hover {
+    background: #ff9800;
+    color:white;
+    border: 2px solid #ff9800;
+}
+#btncv2 {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff9800;
+    color: #fff;
+    border: 2px solid #ff9800;
+    cursor: pointer;
+    transition: background 0.9s ease-in-out;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#btncv2:hover {
+    background: black;
+    color:#ff9800;
+    border: 2px solid #ff9800;
+}
+#btn1, #btncontact {
+    margin-top: 7px;
+}
+
+/* Home Section */
+.home-section {
+    background: #f4f4f4;
+    padding: 30px 0;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 110px;
+}
+.home .content{
+    margin-right: 50px;
+    
+}
+.home .content h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.home .content h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: black
+}
+
+.home .content h3 span {
+    color: #ff9800;
+}
+
+.home .content h2.changecontent {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.home .img-container {
+    background-color:black;
+    border-radius: 50%;
+    width: 350px; /* Adjust as needed */
+    height: 350px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.home .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block; 
+   
+}
+
+/* About Section */
+#about {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+#about .container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    
+}
+
+#about .card img {
+    height: 500px;
+    width: 270px;
+    border-radius: 5px;
+    background-color: black;
+
+    
+}
+#about_text{
+    margin-left: 180px;
+   
+}
+
+#about h3 {
+    font-size: 2rem;
+    margin-bottom: 45px;
+}
+
+#about h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#about h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+ #social-link1 {
+        display: flex; 
+        gap: 12px; 
+        margin-top: 20px; 
+        font-size: 20px;
+    }
+
+
+#about h2 span {
+    color: #ff9800;
+}
+#btncv3 {
+    margin-top: 35px;
+    padding: 10px 20px;
+    background: #ff9800;
+    color: #fff;
+    border: 2px solid #ff9800;
+    cursor: pointer;
+    transition: background 0.9s ease-in-out;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#btncv3:hover {
+    background:black;
+    color:#ff9800;
+    border: 2px solid #ff9800;
+}
+
+/* Services Section */
+#services {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+#services h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#services p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#service_box{
+    justify-content: center;
+    align-items: center;
+}
+
+#services .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    margin-right: 20px;  
+}
+
+#services .card:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background-color: #ff9800;
+}
+
+
+#services .card h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+#services .card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Resume Section */
+#resume {
+    background: #fff;
+    padding: 50px 0;
+}
+
+#resume .text-center {
+    text-align: center;
+}
+
+#resume h1, #resume h5 {
+    margin-bottom: 10px;
+}
+
+#resume .hr {
+    border-top: 2px solid #ff9800;
+    width: 90px;
+    margin: 10px auto;
+    margin-bottom: 50px;
+
+}
+#resume #edu{
+     padding-left: 100px;
+}
+#resume #edu2{
+    padding-left: 200px;
+}
+
+
+#resume i {
+    display: block;
+    margin-bottom: 15px;
+}
+#res_date{
+    font-size: 13px;
+   padding-bottom: 15px;
+}
+
+
+#resume h2 {
+  
+    margin-bottom: 10px;
+}
+
+/* Skills Section */
+#skills {
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+#skills .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#skills h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #000000;
+}
+
+#skills p {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 16px;
+    color: #363636;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h5 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#prog {
+    background: rgb(220, 220, 220); /* Black background line */
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    height: 13px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#prog_bar {
+    height: 100%;
+    background: #ff9800; /* Yellow progress line */
+    line-height: 25px;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 25px;
+    transition: width 0.5s ease;
+}
+
+
+.progress-bar::after {
+    content: "";
+    display: block;
+    height: 100%;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Strengths */
+.strength-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.strength {
+    width: 48%;
+    text-align: center;
+}
+
+.circular-progress {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 10px auto;
+}
+
+.circular-progress::before {
+    content: attr(data-progress) '%';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.circular-progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid #e0e0e0; /* Gray background line */
+    box-sizing: border-box;
+}
+
+.circular-progress[data-progress="90"]::after {
+    border-top-color: #ff9800; /* Yellow progress line */
+    border-right-color: #ff9800;
+    animation: progress90 2s ease-out forwards;
+}
+
+.circular-progress[data-progress="85"]::after {
+    border-top-color: #ff9800; /* Yellow progress line */
+    border-right-color: #ff9800;
+    animation: progress85 2s ease-out forwards;
+}
+
+.circular-progress[data-progress="80"]::after {
+    border-top-color: #ff9800; /* Yellow progress line */
+    border-right-color: #ff9800;
+    animation: progress80 2s ease-out forwards;
+}
+
+.circular-progress[data-progress="75"]::after {
+    border-top-color: #ff9800; /* Yellow progress line */
+    border-right-color: #ff9800;
+    animation: progress75 2s ease-out forwards;
+}
+
+.circular-progress[data-progress="70"]::after {
+    border-top-color: #ff9800; /* Yellow progress line */
+    border-right-color: #ff9800;
+    animation: progress70 2s ease-out forwards;
+}
+
+@keyframes progress90 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(324deg);
+    }
+}
+
+@keyframes progress85 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(306deg);
+    }
+}
+
+@keyframes progress80 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(288deg);
+    }
+}
+
+@keyframes progress75 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes progress70 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(252deg);
+    }
+}
+
+
+/* Portfolio Section */
+#portfolio {
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+#portfolio h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+#portfolio h5{
+    text-align: center;
+}
+#portfolio p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+#pj_img{
+    height: 220px;    
+    width: 100%;
+    
+    transition: transform 0.3s ease;
+}
+
+.pj_card {
+    border: none;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.github-link {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.github-link:hover {
+    color: #ff9800; /* Change the hover color as needed */
+}
+
+.pj_card:hover {
+    transform: translateY(-5px);
+}
+
+.pj_card:hover img {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+#contact {
+    background: #fff;
+    padding: 50px 0;
+}
+
+#contact h1 {
+    margin-bottom: 20px;
+}
+
+#contact p {
+    margin-bottom: 20px;
+}
+#btncontact{
+    margin-left: 10px;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+#btncontact:hover{
+    background-color: black;
+    color: #ff9800;
+}
+
+#contact input, #contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+ .social-links {
+    display: flex;
+    gap: 20px;
+    font-size: 23px;
+    margin-top: 30px;
+    cursor: pointer;
+   
+}
+.social-links i:hover{
+
+    background-color: rgb(176, 170, 170);
+}
+#contact #contact_info {
+    text-transform: none; 
+    font-size: 11px;
+    cursor: pointer;
+    color: #4e4b4b;
+    margin-bottom: 12px;
+}
+#contact #contact_info:hover{
+  color: #ff9800;
+}
+/* Footer Section */
+#footer {
+    background: black;
+    color: #fff;
+    padding: 50px 0px;
+}
+
+#footer h1 {
+    margin-bottom: 10px;
+    color: #ff9800;
+}
+
+#footer p {
+    margin-bottom: 10px;
+}
+
+#footer #icons  {
+    display: flex;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+     gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer #icons i:hover {
+    background-color: #ff9800;
+}
+
+#footer .copyright, #footer .credite {
+    margin-top: 10px;
+}
+
+#footer .credite a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+#footer .credite a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Top Button */
+.arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    border-radius: 50%;
+    text-decoration: none;
+
+}
+
+.arrow:hover {
+    background: black;
+    color:#ff9800
+}
+
+.arrow i {
+    font-size: 1.5rem;
+  
+}
